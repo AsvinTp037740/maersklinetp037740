@@ -1,0 +1,56 @@
+@model MaerskLine.Models.Agent
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Agent</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="AgentID" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="AgentID" class="form-control" />
+                <span asp-validation-for="AgentID" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="AgentName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="AgentName" class="form-control" />
+                <span asp-validation-for="AgentName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="AgentCompany" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="AgentCompany" class="form-control" />
+                <span asp-validation-for="AgentCompany" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="AgentRole" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="AgentRole" class="form-control" />
+                <span asp-validation-for="AgentRole" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

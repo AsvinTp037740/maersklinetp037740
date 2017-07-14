@@ -1,0 +1,56 @@
+@model MaerskLine.Models.Cargocargo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Cargocargo</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="CargoWeight" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="CargoWeight" class="form-control" />
+                <span asp-validation-for="CargoWeight" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="CargoMaterial" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="CargoMaterial" class="form-control" />
+                <span asp-validation-for="CargoMaterial" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="WarehouseNo" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="WarehouseNo" class="form-control" />
+                <span asp-validation-for="WarehouseNo" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="CargoTag" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="CargoTag" class="form-control" />
+                <span asp-validation-for="CargoTag" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

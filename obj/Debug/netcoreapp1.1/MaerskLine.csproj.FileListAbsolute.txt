@@ -1,0 +1,9 @@
+c:\users\asvinvin\documents\visual studio 2017\Projects\MaerskLine\MaerskLine\bin\Debug\netcoreapp1.1\MaerskLine.deps.json
+c:\users\asvinvin\documents\visual studio 2017\Projects\MaerskLine\MaerskLine\bin\Debug\netcoreapp1.1\MaerskLine.runtimeconfig.json
+c:\users\asvinvin\documents\visual studio 2017\Projects\MaerskLine\MaerskLine\bin\Debug\netcoreapp1.1\MaerskLine.runtimeconfig.dev.json
+c:\users\asvinvin\documents\visual studio 2017\Projects\MaerskLine\MaerskLine\bin\Debug\netcoreapp1.1\MaerskLine.dll
+c:\users\asvinvin\documents\visual studio 2017\Projects\MaerskLine\MaerskLine\bin\Debug\netcoreapp1.1\MaerskLine.pdb
+c:\users\asvinvin\documents\visual studio 2017\Projects\MaerskLine\MaerskLine\obj\Debug\netcoreapp1.1\MaerskLine.AssemblyInfo.cs
+c:\users\asvinvin\documents\visual studio 2017\Projects\MaerskLine\MaerskLine\obj\Debug\netcoreapp1.1\MaerskLine.dll
+c:\users\asvinvin\documents\visual studio 2017\Projects\MaerskLine\MaerskLine\obj\Debug\netcoreapp1.1\MaerskLine.pdb
+c:\users\asvinvin\documents\visual studio 2017\Projects\MaerskLine\MaerskLine\obj\Debug\netcoreapp1.1\MaerskLine.csprojResolveAssemblyReference.cache

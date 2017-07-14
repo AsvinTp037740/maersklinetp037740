@@ -1,0 +1,49 @@
+@model MaerskLine.Models.Warehouse
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Warehouse</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="WarehouseNo" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="WarehouseNo" class="form-control" />
+                <span asp-validation-for="WarehouseNo" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="WarehouseLocation" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="WarehouseLocation" class="form-control" />
+                <span asp-validation-for="WarehouseLocation" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="WarehouseCapacity" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="WarehouseCapacity" class="form-control" />
+                <span asp-validation-for="WarehouseCapacity" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

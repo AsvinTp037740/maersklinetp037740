@@ -1,0 +1,42 @@
+@model MaerskLine.Models.Agent
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Agent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AgentID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgentID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgentName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgentName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgentCompany)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgentCompany)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgentRole)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgentRole)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
